@@ -12,8 +12,15 @@ const port = 5000;
 process.env.GOOGLE_APPLICATION_CREDENTIALS = path.join(__dirname, 'ServiceAccountToken.json');
 
 // Enable CORS
+const cors = require('cors');
 app.use(cors());
-
+const corsOptions = {
+    origin: 'https://celadon-nougat-b6829c.netlify.app/',
+    optionsSuccessStatus: 200,
+  };
+  
+  app.use(cors(corsOptions));
+  
 // const corsOptions = {
 //     origin: 'https://658aeb133098faaa9ed5c1b3--keen-tapioca-51ec68.netlify.app/', // Replace with your Netlify app URL
 //     optionsSuccessStatus: 200,
