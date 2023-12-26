@@ -15,7 +15,7 @@ process.env.GOOGLE_APPLICATION_CREDENTIALS = path.join(__dirname, 'ServiceAccoun
 //app.use(cors());
 
 const corsOptions = {
-    origin: 'https://keen-tapioca-51ec68.netlify.app/', // Replace with your Netlify app URL
+    origin: 'https://658aeb133098faaa9ed5c1b3--keen-tapioca-51ec68.netlify.app/', // Replace with your Netlify app URL
     optionsSuccessStatus: 200,
 };
 
@@ -24,7 +24,7 @@ app.use(cors(corsOptions));
 // Create a client for Google Cloud Vision API
 const client = new ImageAnnotatorClient();
 
-// Set up multer for handling file uploads
+// Set up multer for handling file upload
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
