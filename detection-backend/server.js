@@ -12,14 +12,14 @@ const port = 5000;
 process.env.GOOGLE_APPLICATION_CREDENTIALS = path.join(__dirname, 'ServiceAccountToken.json');
 
 // Enable CORS
-//app.use(cors());
+app.use(cors());
 
-const corsOptions = {
-    origin: 'https://658aeb133098faaa9ed5c1b3--keen-tapioca-51ec68.netlify.app/', // Replace with your Netlify app URL
-    optionsSuccessStatus: 200,
-};
+// const corsOptions = {
+//     origin: 'https://658aeb133098faaa9ed5c1b3--keen-tapioca-51ec68.netlify.app/', // Replace with your Netlify app URL
+//     optionsSuccessStatus: 200,
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 // Create a client for Google Cloud Vision API
 const client = new ImageAnnotatorClient();
