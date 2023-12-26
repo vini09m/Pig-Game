@@ -15,7 +15,7 @@ process.env.GOOGLE_APPLICATION_CREDENTIALS = path.join(__dirname, 'ServiceAccoun
 //app.use(cors());
 
 const corsOptions = {
-    origin: 'https://clever-faloodeh-e7c31a.netlify.app/', // Replace with your Netlify app URL
+    origin: 'https://keen-tapioca-51ec68.netlify.app/', // Replace with your Netlify app URL
     optionsSuccessStatus: 200,
 };
 
